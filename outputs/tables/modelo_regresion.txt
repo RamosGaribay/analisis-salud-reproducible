@@ -1,0 +1,26 @@
+Resumen del modelo de regresión logística
+
+
+Call:
+glm(formula = target ~ age + sex + trestbps + chol + thalach, 
+    family = binomial(link = "logit"), data = datos)
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.280819   0.997299  -0.282   0.7783    
+age         -0.016318   0.009543  -1.710   0.0873 .  
+sexHombre   -1.876837   0.186946 -10.039  < 2e-16 ***
+trestbps    -0.020164   0.004571  -4.411 1.03e-05 ***
+chol        -0.007491   0.001514  -4.948 7.51e-07 ***
+thalach      0.047132   0.004197  11.231  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1420.2  on 1024  degrees of freedom
+Residual deviance: 1073.5  on 1019  degrees of freedom
+AIC: 1085.5
+
+Number of Fisher Scoring iterations: 4
+
